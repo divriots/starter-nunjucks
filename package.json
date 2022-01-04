@@ -1,0 +1,16 @@
+{
+  "name": "@backlight-dev/divriots.starter-nunjucks",
+  "version": "0.0.0",
+  "description": "",
+  "license": "MIT",
+  "type": "module",
+  "homepage": "{{ homepage }}",
+  "scripts": {
+    "serve": "npx backlight@latest serve G9KcHezG3XVGa3tjILJI --open"
+  },
+  "devDependencies": {
+    "@divriots/dockit-core": "*",
+    "nunjucks": "*"
+  },
+  "dependencies": {}
+}
