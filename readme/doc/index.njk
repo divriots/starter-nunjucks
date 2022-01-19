@@ -86,9 +86,7 @@ title: My Page Using Design Systems Components
 </code></pre>
 </li>
 <li><code>_includes/default.njk</code> containing the base layout and importing the <code>Button</code> component from the Design System:
-{% raw %}
-<pre><code id="def"></code></pre>
-{% endraw %}
+<pre><code id="default_njk_file"></code></pre>
 </li>
 </ul>
 </li>
@@ -106,7 +104,7 @@ title: My Page Using Design Systems Components
 {# Maybe is worth it to add syntax highlighting this way? #}
 {% raw %}
 <script>
-document.querySelector('#def').innerHTML=`{% import "button/src/button.njk" as Button %}
+document.querySelector('#default_njk_file').innerHTML=`{% import "button/src/button.njk" as Button %}
 
 &lt;!DOCTYPE html>
 &lt;html lang="en">
