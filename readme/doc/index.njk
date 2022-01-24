@@ -47,12 +47,17 @@ Copy it.
 <h3>In your local project
 </h3>
 
+<p>ℹ️ In the following instructions, keep in mind to use the right path to your Design
+System as set in the <em>npm</em> registry (e.g. <code>@backlight-dev/john.design-system</code>) .
+Have a look at the <code>node_modules</code> folder.
+</p>
+
 <ol>
 <li>Paste and execute the previously copied command. Validate default choices.
 </li>
 <li>Edit the <code>package.json</code> Sass script to set import paths to the Design System root:
-<pre><code>"watch:sass": "sass --load-path=node_modules/@backlight-dev/[workspace].[project] --no-source-map --watch sass:_site/css",
-"build:sass": "sass --load-path=node_modules/@backlight-dev/[workspace].[project] --no-source-map sass:_site/css",</code></pre>
+<pre><code>"watch:sass": "sass --load-path=node_modules/@backlight-dev/john.design-system --no-source-map --watch sass:_site/css",
+"build:sass": "sass --load-path=node_modules/@backlight-dev/john.design-system --no-source-map sass:_site/css",</code></pre>
 </li>
 <li>Add an <code>.eleventy.js</code> config file at the root level of your folder to set the Design System root in the Nunjucks' loading paths:
 <pre><code>let Nunjucks = require("nunjucks");
@@ -93,9 +98,6 @@ title: My Page Using Design Systems Components
 <li>Run the <code>npm start</code> command to run the development environment, and point your browser to <a href="http://localhost:8080/README">http://localhost:8080/README</a>.
 </li> 
 </ol>
-
-<p>ℹ️ Keep in mind to replace <code>[workspace]</code> and <code>[project]</code> by the name of yours. Have a look at the <code>node_modules/@backlight-dev</code> folder.
-</p>
 
 <p>Have a look at your browser: your page was updated and you should see the Design System's <code>Button</code> component welcoming you, using the internal Design Tokens and Theme.
 </p>
